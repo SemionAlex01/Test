@@ -1,0 +1,18 @@
+#!name=TikTok Netherlands Auto
+#!desc=TikTok via a Netherlands subscription node (NL, Netherlands, Nederland, Holland, Amsterdam). Requires Shadowrocket to support Proxy Group in modules.
+
+[Proxy Group]
+TikTok-NL = url-test,policy-regex-filter=(?i)(🇳🇱|\bNL\b|Netherlands|Nederland|Holland|Нидерланд|Амстердам|Amsterdam),url=https://cp.cloudflare.com/generate_204,interval=600,timeout=5,tolerance=100
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,TikTok-NL
+DOMAIN-SUFFIX,tiktok.com,TikTok-NL
+DOMAIN-SUFFIX,tiktokv.com,TikTok-NL
+DOMAIN-SUFFIX,tiktokcdn.com,TikTok-NL
+DOMAIN-SUFFIX,tiktokcdn-us.com,TikTok-NL
+DOMAIN-SUFFIX,tiktokcdn-eu.com,TikTok-NL
+DOMAIN-SUFFIX,byteoversea.com,TikTok-NL
+DOMAIN-SUFFIX,ibytedtos.com,TikTok-NL
+DOMAIN-SUFFIX,musical.ly,TikTok-NL
+DOMAIN-SUFFIX,ttwstatic.com,TikTok-NL
+DOMAIN-SUFFIX,ttlivecdn.com,TikTok-NL
